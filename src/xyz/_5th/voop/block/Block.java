@@ -3,7 +3,7 @@
  * but that does not mean you own it. 
  * Contact me at https://github.com/Phasesaber .
  */
-package xyz._5th.voop;
+package xyz._5th.voop.block;
 
 import java.util.ArrayList;
 

@@ -5,7 +5,7 @@
  */
 package xyz._5th.voop.parser;
 
-import xyz._5th.voop.Block;
+import xyz._5th.voop.block.Block;
 import xyz._5th.voop.token.Tokenizer;
 
 /**
