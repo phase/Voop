@@ -36,7 +36,7 @@ public class Tokenizer {
 				TokenType.STRING_LITERAL));
 		tokenDatas.add(new TokenData(Pattern.compile("^('.*')"),
 				TokenType.STRING_LITERAL));
-		for (String t : new String[] { "=", "\\(", "\\)", "\\.", "\\," })
+		for (String t : new String[] { "=", ":", "\\(", "\\)", "\\.", "\\," })
 			tokenDatas.add(new TokenData(Pattern.compile("^(" + t + ")"), TokenType.TOKEN));
 	}
 	
