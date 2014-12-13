@@ -39,7 +39,14 @@ public class Tokenizer {
 		for (String t : new String[] { "=", "\\(", "\\)", "\\.", "\\," })
 			tokenDatas.add(new TokenData(Pattern.compile("^(" + t + ")"), TokenType.TOKEN));
 	}
-
+	
+	public void nextToken(int i) {
+		while(i > 0){
+			i--;
+			nextToken();
+		}
+	}
+	
 	public Token nextToken() {
 		str = str.trim();
 		if (pushBack) {

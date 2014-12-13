@@ -14,6 +14,8 @@ package xyz._5th.voop;
  * 
  * @author Phase(Jadon Fowler) on Dec 12, 2014
  */
-public class Type {
-
+public enum VarType {
+	
+	STRING, INTEGER
+	
 }

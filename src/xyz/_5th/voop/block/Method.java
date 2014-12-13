@@ -5,6 +5,10 @@
  */
 package xyz._5th.voop.block;
 
+import xyz._5th.voop.Parameter;
+import xyz._5th.voop.Value;
+import xyz._5th.voop.VarType;
+
 /**
  * Project: Voop
  * 
@@ -15,18 +19,28 @@ package xyz._5th.voop.block;
 public class Method extends Block {
 	
 	private String name;
-	private Type type;
+	private VarType type;
 	private Parameter[] params;
 	private Value returnValue;
 	
-	public Method(Block superBlock) {
+	public Method(Block superBlock, String name, VarType type, Parameter[] pm) {
 		super(superBlock);
+		this.name = name;
+		this.type = type;
+		this.params = pm;
 	}
 
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
+		invoke();
+	}
+	
+	/**
+	 * Invoke method with values
+	 * @param values
+	 */
+	public void invoke(Value... values){
 		
 	}
-
+	
 }
