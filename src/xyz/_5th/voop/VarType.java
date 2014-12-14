@@ -16,6 +16,8 @@ package xyz._5th.voop;
  */
 public enum VarType {
 	
+	//Boolean? Other Types?
+	
 	STRING, INTEGER
 	
 }
